@@ -1,0 +1,289 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Bebas+Neue&display=swap');
+*{box-sizing: border-box; font-family: 'Bebas Neue', 'Noto Sans KR', sans-serif;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+
+/* main Home */
+#section{width: 100%; height: 100vh;position: relative;  background-image: url(../img/1.jpg); }
+#section .typed_wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 70px; color: #393a74; line-height: 1; text-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff, 2px -2px 4px #fff;}
+
+#section .typed_wrap .text_type{display: inline-block;}
+
+#section .myname{transform:rotate(-90deg); position: fixed; top: 100px; left: 0px; font-size: 30px; color: #fff; transition:0.5s;}
+#section .myname span{color: #393a74; text-transform: uppercase;}
+#section .insta{}
+#section .insta img{width: 30px; position: absolute; top: 50px; right:50px;}
+
+#section .btn{}
+#section .btn i{width: 30px; position: absolute; top: 90%; left: 50%; cursor: pointer; transform: translate(-50%, -50%); font-size: 50px; color: #393a74;}
+#section .btn i:hover{color: #fff;}
+
+
+
+/* about */
+.wrap{width: 100%; background: linear-gradient(to bottom,#fff,#393a74);}
+
+#about{width: 100%; height: 100vh; position: relative; margin: 0 auto;}
+#about h1{font-size: 60px; color:#222; text-align: center; padding: 100px 0;}
+#about .frame{width: 1200px; margin: 0 auto;}
+#about .frame .fro1{float: left;}
+#about .frame .fro1 .poto{width: 300px; margin: 0 auto; padding-bottom: 50px;}
+#about .frame .fro1 h2{font-size: 30px;}
+#about .frame .fro1 p{font-size: 17px; padding-bottom: 5px;}
+
+#about .frame .fro2{float: right;}
+#about .frame .fro2 .swot{width: 500px; padding-bottom: 30px;}
+#about .frame .fro2 .swot h2{font-size: 30px; padding-bottom: 10px;}
+#about .frame .fro2 .swot ul{}
+#about .frame .fro2 .swot ul li{}
+
+#about .frame .fro2 .swot ul li p{font-size: 20px; padding-top: 5px;}
+
+#about .frame > .fro2 > p{padding: 10px 0; border-top: 3px solid #ccc;}
+#about .frame .fro2 h3{font-size: 25px; color: #393a74; font-weight: bold;}
+
+
+/* SKILLS */
+#skill{width: 100%; height: 100vh; position: relative;}
+#skill #circle_bar{width: 100%; height: 600px; margin: 0 auto; position: relative; display: block;}
+#skill #circle_bar h1{font-size: 60px; color:#444; text-align: center; padding: 100px 0; display:}
+#skill #circle_bar .frame{position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); width: 100%; display: flex; justify-content: center; flex-wrap:wrap;}
+
+#skill #circle_bar .frame .box{display: inline-block; width: 240px; height: 240px; position: relative;}
+#skill #circle_bar .frame .box .cont{position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
+#skill #circle_bar .frame .box .cont .top{position: relative; width: 150px; height: 150px; border-radius:50%; box-shadow: inset 0 0 16px rgba(0,0,0,0.5);}
+#skill #circle_bar .frame .box .cont .top .num{position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
+#skill #circle_bar .frame .box .cont .top .num h2{font-size: 13px; color:#555;}
+#skill #circle_bar .frame .box .cont .top .num h2 .count{font-size: 20px; color:#222;}
+
+#circle_bar .frame .box .cont .bottom{padding-top: 10px; color:#555; text-align: center;}
+
+svg{position: relative; width: 150px; height: 150px; z-index: 99;}
+svg circle{width: 100%; height: 100%; fill:none;  stroke-width: 10; transform: translate(5px, 5px);}
+svg circle:nth-child(2){
+    stroke-linecap: butt; /*스트로크의 선 끝부분 처리 butt, round, project*/
+    stroke-dasharray: 440; /*점선의 형태가 안보이도록 설치하는 것. 원의 테두리 길이(2PI*r) = 2*3.14*70(반지름 길이) = 439.6 ==> 440*/  
+    stroke-dashoffset: 440;
+    stroke: #393a74;
+    transition: stroke-dashoffset 2s;
+}
+
+#skill .infor{width: 1000px; margin: 0 auto; padding-top: 300px; position: relative;}
+#skill .infor ul{}
+#skill .infor ul li{margin: 10px; }
+#skill .infor ul li p{font-size: 18px; padding-left: 5px;}
+#skill .infor ul li p img{width: 25px; height: 25px;}
+
+
+
+
+/* PORTFOLIO */
+#portfolio{width: 100%; height: 100vh;}
+#portfolio h1{font-size: 60px; color:#666; text-align: center; position: relative; padding: 100px 0;}
+#portfolio .port{}
+#portfolio .port .slides{position: relative; width:1000px; height: 80vh; margin:0 auto; margin-top:50px;}
+#portfolio .port .slides>.slides-container{width:1000px; height: 450px;}
+#portfolio .port .slides>.slides-container>li{display: none; position: absolute; left:0; top:0; width:1000px; height: 400px;}
+#portfolio .port .slides>.slides-container>li>ul>li:last-child{padding-top: 10px;} 
+#portfolio .port .slides>.slides-container>li.phoenix>ul>li:last-child{text-align: center; padding-left: 60px;} 
+#portfolio .port .slides>.slides-container>li.hospital>ul>li:last-child{text-align: center; padding-left: 20px;} 
+#portfolio .port .slides>.slides-container>li>h3{position: absolute; top: 63%; left: 50%; transform: translate(-50%);}
+#portfolio .port .slides>.slides-container>li.restaurant>h3{left: 50%; transform:translateX(-50%); width: 100%;text-align: center;}
+
+#portfolio .port .slides>.slides-container>li>h3>a{display: inline-block; margin-left:10px; padding:5px 10px; color:#fff; background-color:#393a74; font-size: 17px; border-radius: 4px;}
+#portfolio .port .slides>.slides-container>li>h3>a:hover{background-color:#1a1b50; transition: all .3s;}
+#portfolio .port .slides>.slides-container>li>ul{position: absolute; bottom: 0px; left: 50%; transform: translate(-50%);width: 100%; text-align: center;}
+#portfolio .port .slides>.slides-container>li>ul>li{margin-bottom:5px;}
+#portfolio .port .slides>.slides-container>li>ul>li>span{display: inline-block; width:10px; height: 10px; margin-left: 5px; border-radius: 50%;}
+
+#portfolio .port .slides > .slides-container> li.kuliner{  
+    background-image: url(../img/kuliner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.website{
+    background-image: url(../img/seven.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.wedding{
+    background-image: url(../img/wedding.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.bno{
+    background-image: url(../img/bno.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.investplan{
+    background-image: url(../img/investplan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.play{
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.hospital{
+    background-image: url(../img/hospital.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.cashmere{
+    background-image: url(../img/cashmere.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.weather{
+    background-image: url(../img/weather.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+
+
+
+#portfolio .port .slides>.slides-container>li.kuliner>ul>li>span:nth-child(1){background-color: #ff6600;}
+#portfolio .port .slides>.slides-container>li.kuliner>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.kuliner>ul>li>span:nth-child(3){background-color: #000;}
+#portfolio .port .slides>.slides-container>li:nth-child(1){display: block;}
+
+#portfolio .port .slides>.slides-container>li.website>ul>li>span:nth-child(1){background-color: #ccc;}
+#portfolio .port .slides>.slides-container>li.website>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.website>ul>li>span:nth-child(3){background-color: #000;}
+
+#portfolio .port .slides>.slides-container>li.wedding>ul>li>span:nth-child(1){background-color: #ddd;}
+#portfolio .port .slides>.slides-container>li.wedding>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.wedding>ul>li>span:nth-child(3){background-color: pink;}
+
+
+
+
+.slides-container>li.ent>ul{bottom:-20px;}
+
+
+/*이전 다음 버튼*/
+.prevnext{position: absolute; top:28%; width:100%;}
+.prev, .next{position: absolute;display: block;width:30px;height: 30px;text-indent: -9999px;background-size: cover;opacity: 0.7;transition: all .3s;}
+
+.prev{left:0; background-image: url(../img/left-arrow.png);}
+.next{right: 0; background-image: url(../img/right-arrow.png);}
+
+
+
+/* CONTACT */
+#contact{width: 100%; height: 100vh;}
+#contact .contact{width: 600px; margin: 0 auto; padding: 50px 0;}
+#contact .contact h2{font-size: 60px; color:#f2f2f2; padding-bottom: 50px; text-align: center; padding: 100px 0;}
+#contact .contact legend{font-size: 22px; color:#f2f2f2;}
+
+#contact .contact .formlist{padding: 10px;}
+#contact .contact .formlist ul{}
+#contact .contact .formlist ul li{display: flex; align-items: flex-start; padding: 10px 0;}
+
+#contact .contact .formlist ul li label{display: block; width: 140px; font-size: 20px; word-break: keep-all; line-height: 36px; color:#f2f2f2;font-weight: lighter;}
+#contact .contact .formlist ul li label sup{color:#f00;}
+#contact .contact .formlist ul li .inputbox{display: block; width: calc(100% - 140px); padding: 0 10px;}
+
+#contact .contact .formlist ul li .inputbox input{display: block; width: 100%; line-height: 36px; font-size: 16px; border:none; border-bottom: 1px solid #ccc; padding: 0 10px;}
+#contact .contact .formlist ul li .inputbox textarea{width: 100%; border: 1px solid #ccc; line-height: 36px; font-size: 16px; border-radius:4px; height: 320px; resize: none;}
+#contact .contact .formlist .btn_box{padding: 20px 10px; border-top: 1px solid #999; text-align: right;}
+#contact .contact .formlist .btn_box button{font-size: 17px; background-color: #7d7eb8; color:#fff; border:none; border-radius:4px; cursor: pointer; padding: 10px 20px;}
+#contact .contact .formlist .btn_box button:hover{background-color: #5657a6;}
+
+#contact .thankyou_message{position: fixed; top:0; left:0; right:0; bottom:0; z-index: 10; background: rgba(0,0,0,0.5); display: none;}
+#contact .thankyou_message article{position: absolute; max-width: 500px; min-width:300px; background-color: #fff; border-radius:4px; padding: 20px; top:50%; left:50%; transform: translate(-50%, -50%);}
+
+#contact .thankyou_message article h1{color:#555; font-size: 22px; padding-bottom: 20px; word-break: keep-all;}
+#contact .thankyou_message article p{font-size: 17px; color:#777; padding-bottom: 20px; border-bottom: 1px solid #ccc;}
+#contact .thankyou_message article .btn_box{padding-top: 20px; text-align: right;}
+#contact .thankyou_message article .btn_box a{display: inline-block; padding: 6px 12px; background: #5657a6; color:#fff; border-radius:4px; font-size: 17px;}
+
+.bottom img{width: 100%; height: 640px;}
+
+
+/* footer */
+footer{width: 100%; height:auto; background-color: #1c1c4e;}
+footer p{font-size: 15px; text-align: center; color: #f5f5f5; line-height: 50px;}
+
+
+/* menu */
+#menu{width: 120px; height: 260px; position: fixed; margin: auto; top: 0; bottom: 0; right: 0; color: rgb(25, 6, 48);}
+#menu li{font-size: 22px; line-height: 40px; border-bottom: 2px solid #fff; transition:0.5s;}
+#menu li span{cursor: pointer;}
+#menu li:nth-child(4){border-bottom: none;}
+#menu li:hover{color: #581307; font-size: 24px}
+
+ /* top button*/
+.top_btn{position: fixed; right:30px; bottom:30px; cursor: pointer; z-index: 1;}
+.top_btn a{font-size: 50px; color:#fff}
+
+
