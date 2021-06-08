@@ -104,9 +104,12 @@ $(document).ready(function(){
         $paging.eq(pagingIdx).parent().addClass("on").siblings().removeClass("on");
     });
 
-
-
-
+    //메일 팝업창 닫기 
+    $(".close").click(function(){
+        $(".thankyou_message").hide();
+            
+    });
+    
 
 
 
