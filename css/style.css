@@ -50,7 +50,7 @@ a{text-decoration: none;}
 /* SKILLS */
 #skill{width: 100%; height: 100vh; position: relative;}
 #skill #circle_bar{width: 100%; height: 600px; margin: 0 auto; position: relative; display: block;}
-#skill #circle_bar h1{font-size: 60px; color:#444; text-align: center; padding: 100px 0; display:}
+#skill #circle_bar h1{font-size: 60px; color:#444; text-align: center; padding: 100px 0; display:block}
 #skill #circle_bar .frame{position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); width: 100%; display: flex; justify-content: center; flex-wrap:wrap;}
 
 #skill #circle_bar .frame .box{display: inline-block; width: 240px; height: 240px; position: relative;}
@@ -224,6 +224,30 @@ svg circle:nth-child(2){
 #portfolio .port .slides>.slides-container>li.wedding>ul>li>span:nth-child(2){background-color: #fff;}
 #portfolio .port .slides>.slides-container>li.wedding>ul>li>span:nth-child(3){background-color: pink;}
 
+#portfolio .port .slides>.slides-container>li.bno>ul>li>span:nth-child(1){background-color: #ddd;}
+#portfolio .port .slides>.slides-container>li.bno>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.bno>ul>li>span:nth-child(3){background-color: pink;}
+
+#portfolio .port .slides>.slides-container>li.investplan>ul>li>span:nth-child(1){background-color: #ddd;}
+#portfolio .port .slides>.slides-container>li.investplan>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.investplan>ul>li>span:nth-child(3){background-color: pink;}
+
+#portfolio .port .slides>.slides-container>li.play>ul>li>span:nth-child(1){background-color: #ddd;}
+#portfolio .port .slides>.slides-container>li.play>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.play>ul>li>span:nth-child(3){background-color: pink;}
+
+#portfolio .port .slides>.slides-container>li.hospital>ul>li>span:nth-child(1){background-color: #ddd;}
+#portfolio .port .slides>.slides-container>li.hospital>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.hospital>ul>li>span:nth-child(3){background-color: pink;}
+
+#portfolio .port .slides>.slides-container>li.cashmere>ul>li>span:nth-child(1){background-color: #ddd;}
+#portfolio .port .slides>.slides-container>li.cashmere>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.cashmere>ul>li>span:nth-child(3){background-color: pink;}
+
+#portfolio .port .slides>.slides-container>li.weather>ul>li>span:nth-child(1){background-color: #ddd;}
+#portfolio .port .slides>.slides-container>li.weather>ul>li>span:nth-child(2){background-color: #fff;}
+#portfolio .port .slides>.slides-container>li.weather>ul>li>span:nth-child(3){background-color: pink;}
+
 
 
 
@@ -267,7 +291,7 @@ svg circle:nth-child(2){
 #contact .thankyou_message article .btn_box{padding-top: 20px; text-align: right;}
 #contact .thankyou_message article .btn_box a{display: inline-block; padding: 6px 12px; background: #5657a6; color:#fff; border-radius:4px; font-size: 17px;}
 
-.bottom img{width: 100%; height: 640px;}
+
 
 
 /* footer */
@@ -282,8 +306,17 @@ footer p{font-size: 15px; text-align: center; color: #f5f5f5; line-height: 50px;
 #menu li:nth-child(4){border-bottom: none;}
 #menu li:hover{color: #581307; font-size: 24px}
 
+
+
+
+
+
  /* top button*/
 .top_btn{position: fixed; right:30px; bottom:30px; cursor: pointer; z-index: 1;}
 .top_btn a{font-size: 50px; color:#fff}
+
+
+
+
 
 

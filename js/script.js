@@ -109,27 +109,6 @@ $(document).ready(function(){
         $(".thankyou_message").hide();
             
     });
-    
-
-
-
-
-
-
-
-
-
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
