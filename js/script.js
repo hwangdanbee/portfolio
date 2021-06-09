@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    //main pont
+    // main pont
     var typed = new Typed('.typed', {
         strings : ["WELCOME !<br>MY PORTFOLIO !", "I am small,<br> but impressive creative person.", "I will always deliver more than expected."],  //브라우저 화면에 띄워줄 문구
         stringsElement : null,  //초기 상태에서 공간을 비운다
@@ -16,12 +16,11 @@ $(document).ready(function(){
     });
 
 
-    //arrow click
+    // arrow click
     $(".btn").click(function(){
         $("html, body").animate({scrollTop:$("#about").offset().top}, 1000);
         return false;
     });
-
 
 
     // menu
@@ -41,7 +40,6 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop:$("#contact").offset().top}, 1000);
         return false;
     });
-
 
 
     //top button
@@ -74,7 +72,6 @@ $(document).ready(function(){
     });
 
 
-
     // slide banner
     var $paging = $(".slides_container>li>a");
     var pagingIdx = 0;
@@ -104,10 +101,10 @@ $(document).ready(function(){
         $paging.eq(pagingIdx).parent().addClass("on").siblings().removeClass("on");
     });
 
-    //메일 팝업창 닫기 
+
+    //mail close button 
     $(".close").click(function(){
         $(".thankyou_message").hide();
-            
     });
 
 
