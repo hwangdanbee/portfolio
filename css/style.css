@@ -84,7 +84,7 @@ svg circle:nth-child(2){
 #portfolio{width: 100%; height: 100vh;}
 #portfolio h1{font-size: 60px; color:#666; text-align: center; position: relative; padding: 40px 0;}
 #portfolio .port{}
-#portfolio .port .slides{position: relative; width:1000px; height: 80vh; margin:0 auto; margin-top:50px;}
+#portfolio .port .slides{position: relative; width:1000px; height: 80vh; margin:0 auto; margin-top:40px;}
 #portfolio .port .slides>.slides-container{width:1000px; height: 450px;}
 #portfolio .port .slides>.slides-container>li{display: none; position: absolute; left:0; top:0; width:1000px; height: 400px;}
 #portfolio .port .slides>.slides-container>li>ul>li:last-child{padding-top: 10px;} 
@@ -94,9 +94,9 @@ svg circle:nth-child(2){
 #portfolio .port .slides>.slides-container>li.restaurant>h3{left: 50%; transform:translateX(-50%); width: 100%;text-align: center;}
 
 #portfolio .port .slides>.slides-container>li>h3>a{display: inline-block; margin-left:10px; padding:5px 10px; color:#fff; background-color:#393a74; font-size: 17px; border-radius: 4px;}
-#portfolio .port .slides>.slides-container>li>h3>a:hover{background-color:#1a1b50; transition: all .3s;}
-#portfolio .port .slides>.slides-container>li>ul{position: absolute; bottom: 0px; left: 50%; transform: translate(-50%);width: 100%; text-align: center;}
-#portfolio .port .slides>.slides-container>li>ul>li{margin-bottom:5px;}
+#portfolio .port .slides>.slides-container>li>h3>a:hover{background-color:#1a1b50; transition: all 0.3s;}
+#portfolio .port .slides>.slides-container>li>ul{position: absolute; bottom: 0px; left: 50%; transform: translate(-50%); width: 100%; text-align: center;}
+#portfolio .port .slides>.slides-container>li>ul>li{margin-bottom:5px;  padding-top: 30px;}
 #portfolio .port .slides>.slides-container>li>ul>li>span{display: inline-block; width:10px; height: 10px; margin-left: 5px; border-radius: 50%;}
 
 #portfolio .port .slides > .slides-container> li.kuliner{  
@@ -197,6 +197,18 @@ svg circle:nth-child(2){
 
 #portfolio .port .slides > .slides-container > li.weather{
     background-image: url(../img/weather.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#portfolio .port .slides > .slides-container > li.movie{
+    background-image: url(../img/movie.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;

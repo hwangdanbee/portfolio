@@ -2,7 +2,7 @@ $(document).ready(function(){
     
     // main pont
     var typed = new Typed('.typed', {
-        strings : ["WELCOME !<br>MY PORTFOLIO !", "I am small,<br> but impressive creative person.", "I will always deliver more than expected."],  //브라우저 화면에 띄워줄 문구
+        strings : ["WELCOME !<br>MY PORTFOLIO !", "I am small,<br> but impressive creative person.", "I will always deliver more than expected!"],  //브라우저 화면에 띄워줄 문구
         stringsElement : null,  //초기 상태에서 공간을 비운다
         typeSpeed : 80,  // 타이핑 속도
         backSpeed : 45,  //backspace의 속도
@@ -83,7 +83,7 @@ $(document).ready(function(){
             $(".slides-container>li").eq(pagingIdx).fadeIn().siblings().fadeOut();
 
         }else{
-            pagingIdx = 9;
+            pagingIdx = 10;
             $(".slides-container>li").eq(pagingIdx).fadeIn().siblings().fadeOut();
         }
         $paging.eq(pagingIdx).parent().addClass("on").siblings().removeClass("on");
@@ -91,7 +91,7 @@ $(document).ready(function(){
 
     $(".next").click(function (evt) {
         evt.preventDefault();
-        if (pagingIdx <= 8) {
+        if (pagingIdx <= 9) {
             pagingIdx++;
             $(".slides-container>li").eq(pagingIdx).fadeIn().siblings().fadeOut();
         } else {
